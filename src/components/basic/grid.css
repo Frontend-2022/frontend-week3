@@ -1,0 +1,12 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #ff3d3d;
+    --header-height: 130px;
+}
+
+.grid {
+    width: 1366px;
+    margin: 0 auto;
+}

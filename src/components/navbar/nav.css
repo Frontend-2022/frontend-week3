@@ -1,0 +1,12 @@
+/* Add a black background color to the top navigation */
+.navigation {
+  width: 100%;
+  height: var(--header-height);
+  background-color: red;
+}
+
+.navigation__name {
+  width: 60px;
+  height: 40px;
+  margin: 0 10px;
+}
