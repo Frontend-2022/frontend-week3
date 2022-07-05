@@ -1,6 +1,6 @@
-.transcriptCSS {
-    width: 100%;
-    height: 500px;
+.contentMiddle {
+    width: 979px;
+    height: 3207px;
     background-color: antiquewhite;
-    text-align: center;
+    margin: 0 auto;
 }

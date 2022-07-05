@@ -4,10 +4,8 @@ import "./transcript.css";
 
 function Transcript() {
     return(
-        <div className="transcriptCSS">
-            <span>
-                Page TRANSCRIPT
-            </span>
+        <div className="contentMiddle">
+            
         </div>
     )
 }
