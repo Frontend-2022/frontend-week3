@@ -23,7 +23,7 @@ class TuitionFee extends React.Component{
                 <NavItem>
                     <NavLink onClick={this.toggle}>Thông tin sinh viên</NavLink>
                     <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                    <ModalHeader toggle={this.toggle}>Hệ Đào Tạo: Cao Đẳng Chính Quy</ModalHeader>
+                    <ModalHeader toggle={this.toggle}><h5>Hệ Đào Tạo: Cao Đẳng Chính Quy</h5></ModalHeader>
                     <ModalBody>
                         <Row>
                             <Col>
@@ -50,6 +50,7 @@ class TuitionFee extends React.Component{
                             <option>5</option>
                         </Input>
                     </FormGroup>
+                <NavItem><h4>BẢNG KÊ CHI TIẾT HỌC PHÍ</h4></NavItem>
                 <Card className="main-card mb-3">
                     <CardBody>
                         <CardTitle>Lưu Ý</CardTitle>
