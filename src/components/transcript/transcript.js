@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { TabContent, Table, Row, Col,
+    Card, CardBody,
+    CardTitle } from "reactstrap";
 import "./transcript.css";
-// import TableExample from "./Table";
+
 function Transcript() {
     return(
         <div className="contentMiddle">
@@ -9,7 +12,7 @@ function Transcript() {
                 <span>Kết quả học tập</span>
             </div>
 
-            <div className="Table">
+            <div className="Table_header">
                 <table width={'98%'} className="gridTable">
                     <tbody>
                 <tr>
@@ -78,9 +81,99 @@ function Transcript() {
                 <button className="Sort-1">Xem bản in</button>
             </div>
             <div className="warn">
-                
+
             </div>
 
+                                 <Col lg="6">
+                                    <Card className="main-card mb-3">
+                                        <CardBody>
+                                            <CardTitle>Kết quả học tập</CardTitle>
+                                            <Table className="mb-0">
+                                                <thead style={{backgroundColor: '#a8a3a3'}}>
+                                                <tr>
+                                                    <th>STT</th>
+                                                    <th>Mã môn học</th>
+                                                    <th>Tên môn học</th>
+                                                    <th style={{textAlign:'center'}}>Số TC</th>
+                                                    <th style={{textAlign:'center'}}>Điểm</th>
+                                                    <th style={{textAlign:'center'}}>Điểm chữ</th>
+                                                    <th style={{textAlign:'center'}}>Kết quả</th>
+                                                    <th style={{textAlign:'center'}}>Ghi chú</th>
+                                                    <th style={{textAlign:'center'}}>Chi tiết</th>
+
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>2DH0211</td>
+                                                    <td>Nguyên lý thị giác</td>
+                                                    <td style={{textAlign:'center'}}>2</td>
+                                                    <td style={{textAlign:'center'}}>10</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+
+                                                </tr>
+                                                <tr>
+                                                <th scope="row">1</th>
+                                                    <td>2DH0211</td>
+                                                    <td>Nguyên lý thị giác</td>
+                                                    <td style={{textAlign:'center'}}>2</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+
+                                                </tr>
+                                                <tr>
+                                                <th scope="row">1</th>
+                                                    <td>2DH0211</td>
+                                                    <td>Nguyên lý thị giác</td>
+                                                    <td style={{textAlign:'center'}}>2</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+
+                                                </tr>
+                                                <tr>
+                                                <th scope="row">1</th>
+                                                    <td>2DH0211</td>
+                                                    <td>Nguyên lý thị giác</td>
+                                                    <td style={{textAlign:'center'}}>2</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+
+                                                </tr>
+                                                <tr>
+                                                <th scope="row">1</th>
+                                                    <td>2DH0211</td>
+                                                    <td>Nguyên lý thị giác</td>
+                                                    <td style={{textAlign:'center'}}>2</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+
+                                                </tr>
+                                                </tbody>
+                                            </Table>
+                                        </CardBody>
+                                    </Card>
+                                 </Col>
+            <div  className="avg">
+                <tr>
+                    <td colSpan={10}  > Điểm trung bình học kỳ:  8.0    </td>
+                </tr>
+            </div>
         </div>
     )
 }
