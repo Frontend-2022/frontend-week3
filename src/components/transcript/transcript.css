@@ -1,6 +1,7 @@
 .contentMiddle {
-    width: 979px;
+    width: 75%;
     height: 3207px;
-    background-color: antiquewhite;
+    background-color:#ffff;
     margin: 0 auto;
+    border: 1px solid  ;
 }
