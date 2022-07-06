@@ -7,17 +7,18 @@ import Transcript from "./components/transcript/transcript";
 import TuitionFee from "./components/tuition_fee/tuitionFee";
 import Navigation from "./components/navbar/nav";
 import "./components/basic/grid.css";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
-    <div className="grid">
+    
+    <div className="App">
+      <Router>
+        {/* Header */}
+        <Navigation />
 
-      <div className="App">
-        <Router>
-          {/* Header */}
-          <Navigation />
-
-        {/* Contents */}
+        <div className="grid">
+          {/* Contents */}
           <div>
             <Routes>
               <Route path='/' exact element={<Schedule/>} />
@@ -25,8 +26,11 @@ function App() {
               <Route path='/tuitionFee' exact element={<TuitionFee/>} />
             </Routes>
           </div>
-        </Router>
-      </div>
+        </div>
+
+        {/* Footer */}
+        <Footer />
+      </Router>
 
     </div>
   );
