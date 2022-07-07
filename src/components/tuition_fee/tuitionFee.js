@@ -1,7 +1,6 @@
 import React from "react";
-import {NavLink,NavItem,Modal, ModalHeader, ModalBody,Row,Col,Card,CardBody,CardTitle,FormGroup,Label,Input } from "reactstrap";
+import {NavLink,NavItem,Modal, ModalHeader, ModalBody,Row,Col,Card,CardBody,CardTitle,FormGroup,Label,Input,Table } from "reactstrap";
 import "./tuitionFee.css";
-
 class TuitionFee extends React.Component{
     constructor(props) {
         super(props);
@@ -17,12 +16,13 @@ class TuitionFee extends React.Component{
             modal: !this.state.modal
         });
     }
+    
     render() {
         return(
             <div className="tuitionFeeCSS">
                 <NavItem>
-                    <NavLink onClick={this.toggle}>Thông tin sinh viên</NavLink>
-                    <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+                    <NavLink onClick={this.toggle} >Thông tin sinh viên</NavLink>
+                    <Modal  isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} >
                     <ModalHeader toggle={this.toggle}><h5>Hệ Đào Tạo: Cao Đẳng Chính Quy</h5></ModalHeader>
                     <ModalBody>
                         <Row>
@@ -42,15 +42,71 @@ class TuitionFee extends React.Component{
                 </NavItem>
                 <FormGroup>
                     <Label for="exampleSelect">Học kỳ</Label>
-                        <Input type="select" name="select" id="exampleSelect">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                        <Input type="select" name="select" id="exampleSelect" >
+                            <option >Tất cả</option>
+                            <option >Học kỳ</option>
+                            <option >Học kỳ</option>
+                            <option >Học kỳ</option>
+                            <option >Học kỳ</option>
                         </Input>
                     </FormGroup>
                 <NavItem><h4>BẢNG KÊ CHI TIẾT HỌC PHÍ</h4></NavItem>
+                <Card className="main-card mb-4">
+                                        <CardBody>
+                                        <Table hover className="mb-0">
+        <thead style={{backgroundColor: '#a8a3a3'}}>
+          <tr>
+            <th>STT</th>
+            <th>Học kỳ</th>
+            <th>Ngày tạo</th>
+            <th>Loại PT</th>
+            <th>Mã</th>
+            <th>Học phí</th>
+            <th>Đã thanh toán</th>
+            <th>Còn lại</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td><a href="/"><i class="pe-7s-print"> </i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td><a href="/"><i class="pe-7s-print"> </i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td><a href="/"><i class="pe-7s-print"> </i></a></td>
+          </tr>
+          
+        </tbody>
+      </Table>
+      
+                                            </CardBody>
+                                            </Card>
                 <Card className="main-card mb-3">
                     <CardBody>
                         <CardTitle>Lưu Ý</CardTitle>
