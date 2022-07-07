@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./schedule.css";
 import { BiCaretLeft, BiCaretRight } from "react-icons/bi";
+import {
+    Row, Col,
+    Card, CardBody,
+    CardTitle
+} from 'reactstrap';
+import TableBordered from "./table-schedule/table-border";
 
 function Schedule() {
     return(
@@ -25,7 +31,12 @@ function Schedule() {
                     <span>THỜI KHÓA BIỂU THEO TUẦN HỌC KỲ HÈ, 2021 - 2022 <br/>TUẦN 3 ( 04/07/2022 - 10/07/2022 )</span>
                 </div>
                 <div className="schedule__contents-table">
-                    TABLE
+                    <Card className="main-card">
+                        <CardBody>
+                            <CardTitle>Table bordered</CardTitle>
+                            <TableBordered/>
+                        </CardBody>
+                    </Card>
                 </div>
             </div>
         </div>
