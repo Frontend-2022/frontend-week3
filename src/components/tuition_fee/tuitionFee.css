@@ -91,7 +91,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
