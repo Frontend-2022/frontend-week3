@@ -1,58 +1,60 @@
-import React from "react";
+import React, {Component, Fragment} from "react";
 import { Link } from "react-router-dom";
-import { TabContent, Table, Row, Col,
-    Card, CardBody,
-    CardTitle } from "reactstrap";
+import { TabContent, Table, Row, Col, Card, CardBody, CardTitle,Button, ButtonGroup } from "reactstrap";
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import "./transcript.css";
-
 function Transcript() {
     return(
-        <div className="contentMiddle">
+        <div className="contentMiddle" style={{borderRadius:"5px",boxShadow:"0px 0px 5px 0px rgb(0 0 0 / 25%)"}}>
             <div className="bgTittle">
-                <span>Kết quả học tập</span>
+                <span style={{color:"#A90001",font:"0.8em  Tahoma, Arial, Sans-Serif",fontSize:"15px",fontWeight:"bold",textTransform:"uppercase"}} >Thông tin sinh viên</span>
             </div>
 
-            <div className="Table_header">
-                <table width={'98%'} className="gridTable">
-                    <tbody>
-                <tr>
-                        <td colSpan={2}>Họ và tên: </td>
-                        <td colSpan={3}>Tạ Đức Minh </td>
-                        <td colSpan={2}>Ngành: </td>
-                        <td colSpan={3}>Thương mại điện tử  </td>
-                </tr>
-                <tr>
-                        <td colSpan={2}>Mã số sinh viên: </td>
-                        <td colSpan={3}> </td>
-                        <td colSpan={2}>Chuyên ngành: </td>
-                        <td colSpan={3}>  </td>
-                </tr>
-                <tr>
-                        <td colSpan={2}>Ngày sinh: </td>
-                        <td colSpan={3}> </td>
-                        <td colSpan={2}>Hệ ĐT: </td>
-                        <td colSpan={3}>  </td>
-                </tr>
-                <tr>
-                        <td colSpan={2}>Nơi sinh: </td>
-                        <td colSpan={3}> </td>
-                        <td colSpan={2}>Lớp: </td>
-                        <td colSpan={3}>  </td>
-                </tr>
-                <tr>
-                        <td colSpan={2}> </td>
-                        <td colSpan={3}></td>
-                        <td colSpan={2}>Khóa học </td>
-                        <td colSpan={3}> </td>
-                </tr>
 
+            <div className="Table_header"style={{margin:"0 auto",display:"flex",width:"100%"}}>
+                <table style={{marginLeft:"50px",width:"90%"}}  cellspacing="0" cellpadding="5">
+                     <tbody style={{margin:0,padding:0}}>
+                        <tr>
+                            <th colSpan={2}>Họ và tên: </th>
+                            <td colSpan={3} className="td-css">Tạ Đức Minh </td>
+                            <th colSpan={2}>Ngành: </th>
+                            <td colSpan={3}>Thương mại điện tử  </td>
+                        </tr>
+
+                        <tr>
+                            <th colSpan={2}>MSSV: </th>
+                            <td colSpan={3}  className="td-css"> </td>
+                            <th colSpan={2}>Chuyên ngành: </th>
+                            <td colSpan={3}  className="td-css">  </td>
+                        </tr>
+
+                        <tr>
+                            <th colSpan={2}>Ngày sinh: </th>
+                            <td colSpan={3}  className="td-css"> </td>
+                            <th colSpan={2}>Hệ ĐT: </th>
+                            <td colSpan={3}  className="td-css">  </td>
+                        </tr>
+
+                        <tr>
+                            <th colSpan={2}>Nơi sinh: </th>
+                            <td colSpan={3}  className="td-css"> </td>
+                            <th colSpan={2}>Lớp: </th>
+                            <td colSpan={3} className="td-css">  </td>
+                        </tr>
+
+                        <tr>
+
+                            <th colSpan={2}>Khóa học: </th>
+                            <td colSpan={3} className="td-css"> </td>
+                        </tr>
                     </tbody>
                 </table>
-            </div>
 
+            </div>
+            <hr style={{border:0,borderTop:"1px solid #eee",width:"90%"}}></hr>
             <div className="Sort">
-                <div className="Sort-1"><label>Năm học</label>
-                    <select>
+                <div className="Sort-1"><label style={{fontSize:'14px'}}>Năm học</label>
+                    <select className="slect">
                         <option value={2026}>2026</option>
                         <option value={2025}>2025</option>
                         <option value={2024}>2024</option>
@@ -64,46 +66,63 @@ function Transcript() {
                         <option selected={"select"} value={0}>Tất cả</option>
                     </select>
                 </div>
-                <div className="Sort-1"><label>Học kỳ</label>
-                    <select>
+                <div className="Sort-1"><label style={{fontSize:'14px'}}>Học kỳ</label>
+                    <select className="slect">
                         <option value={"HKĐ"}>Học kì đầu</option>
                         <option value={"HKG"}>Học kì giữa</option>
                         <option value={"HKC"}>Học kì cuối</option>
                         <option selected={"select"} value={0}>Tất cả</option>
                     </select>
                 </div>
-                <div className="Sort-1"><label>Hệ điểm</label>
-                    <select>
+                <div className="Sort-1"><label style={{fontSize:'14px'}}>Hệ điểm</label>
+                    <select className="slect">
                         <option value={"10"}>10</option>
                         <option value={"4"}>4</option>
                     </select>
                 </div>
-                <button className="Sort-1">Xem bản in</button>
+                <Button outline className="mb-2 me-2 btn-transition btn-primary" color="primary">Xem bản in</Button>
             </div>
+            <hr style={{border:0,borderTop:"1px solid #eee",width:"90%"}}></hr>
             <div className="warn">
-
+                <strong style={{width:'130px' , display:'flex',justifyContent:"space-between", marginLeft:"20px",marginTop:"5px"}}>
+                    <u>Chú ý:</u>
+                </strong>
+                    <div style={{width:'130px' , display:'flex', marginLeft:"20px",marginTop:"5px"}}>
+                    <img src="https://student.ueh.edu.vn/Content/images/Dau.png" alt="" style={{width:'15',border:0,marginRight:"15px"}}>
+                    </img>
+                      <p> Học phần đậu</p>
+                    </div>
+                    <div style={{width:'130px' , display:'flex', marginLeft:"20px",marginTop:"5px"}}>
+                    <img src="https://student.ueh.edu.vn/Content/images/Rot.png" alt="" style={{width:'15',border:0,marginRight:"22px"}}>
+                    </img>
+                      <p >  Học phần rớt</p>
+                    </div>
             </div>
 
                                  <Col lg="6">
                                     <Card className="main-card mb-3">
                                         <CardBody>
                                             <CardTitle>Kết quả học tập</CardTitle>
-                                            <Table className="mb-0">
+                                            <Table hover className="mb-0">
                                                 <thead style={{backgroundColor: '#a8a3a3'}}>
                                                 <tr>
-                                                    <th>STT</th>
-                                                    <th>Mã môn học</th>
-                                                    <th>Tên môn học</th>
-                                                    <th style={{textAlign:'center'}}>Số TC</th>
-                                                    <th style={{textAlign:'center'}}>Điểm</th>
-                                                    <th style={{textAlign:'center'}}>Điểm chữ</th>
-                                                    <th style={{textAlign:'center'}}>Kết quả</th>
-                                                    <th style={{textAlign:'center'}}>Ghi chú</th>
-                                                    <th style={{textAlign:'center'}}>Chi tiết</th>
-
+                                                <th>STT</th>
+                                                        <th>Mã môn học</th>
+                                                        <th>Tên môn học</th>
+                                                        <th style={{textAlign:'center'}}>Số TC</th>
+                                                        <th style={{textAlign:'center'}}>Điểm</th>
+                                                        <th style={{textAlign:'center'}}>Điểm chữ</th>
+                                                        <th style={{textAlign:'center'}}>Kết quả</th>
+                                                        <th style={{textAlign:'center'}}>Ghi chú</th>
+                                                        <th style={{textAlign:'center'}}>Chi tiết</th>
                                                 </tr>
                                                 </thead>
-                                                <tbody>
+                                                        <tbody>
+                                                        <tr>
+                                                    <td colspan="9" style={{backgroundColor: "#c7d6f3"}}>
+                                                        <b style={{color:"blue"}}>Năm học: 2020 - Học kỳ: HKC</b>
+                                                    </td>
+                                                </tr>
                                                 <tr>
                                                     <th scope="row">1</th>
                                                     <td>2DH0211</td>
@@ -164,8 +183,9 @@ function Transcript() {
                                                     <td></td>
 
                                                 </tr>
-                                                </tbody>
+                                                        </tbody>
                                             </Table>
+                                           
                                         </CardBody>
                                     </Card>
                                  </Col>
