@@ -2,10 +2,12 @@ import React, {Component, Fragment} from "react";
 import { Link } from "react-router-dom";
 import { TabContent, Table, Row, Col, Card, CardBody, CardTitle,Button, ButtonGroup } from "reactstrap";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import ContentTranscript from './ContentTranscript/ContentTranscript'
 import "./transcript.css";
+
 function Transcript() {
     return(
-        <div className="contentMiddle" style={{borderRadius:"5px",boxShadow:"0px 0px 5px 0px rgb(0 0 0 / 25%)"}}>
+        <div className="contentMiddle" style={{borderRadius:"5px",boxShadow:"0px 0px 5px 0px rgb(0 0 0 / 25%)",}}>
             <div className="bgTittle">
                 <span style={{color:"#A90001",font:"0.8em  Tahoma, Arial, Sans-Serif",fontSize:"15px",fontWeight:"bold",textTransform:"uppercase"}} >Thông tin sinh viên</span>
             </div>
@@ -99,6 +101,8 @@ function Transcript() {
                     </div>
             </div>
 
+
+
                                  <Col lg="6">
                                     <Card className="main-card mb-3">
                                         <CardBody>
@@ -117,83 +121,23 @@ function Transcript() {
                                                         <th style={{textAlign:'center'}}>Chi tiết</th>
                                                 </tr>
                                                 </thead>
-                                                        <tbody>
-                                                        <tr>
-                                                    <td colspan="9" style={{backgroundColor: "#c7d6f3"}}>
-                                                        <b style={{color:"blue"}}>Năm học: 2020 - Học kỳ: HKC</b>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>2DH0211</td>
-                                                    <td>Nguyên lý thị giác</td>
-                                                    <td style={{textAlign:'center'}}>2</td>
-                                                    <td style={{textAlign:'center'}}>10</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
 
-                                                </tr>
-                                                <tr>
-                                                <th scope="row">1</th>
-                                                    <td>2DH0211</td>
-                                                    <td>Nguyên lý thị giác</td>
-                                                    <td style={{textAlign:'center'}}>2</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-
-                                                </tr>
-                                                <tr>
-                                                <th scope="row">1</th>
-                                                    <td>2DH0211</td>
-                                                    <td>Nguyên lý thị giác</td>
-                                                    <td style={{textAlign:'center'}}>2</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-
-                                                </tr>
-                                                <tr>
-                                                <th scope="row">1</th>
-                                                    <td>2DH0211</td>
-                                                    <td>Nguyên lý thị giác</td>
-                                                    <td style={{textAlign:'center'}}>2</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-
-                                                </tr>
-                                                <tr>
-                                                <th scope="row">1</th>
-                                                    <td>2DH0211</td>
-                                                    <td>Nguyên lý thị giác</td>
-                                                    <td style={{textAlign:'center'}}>2</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-
-                                                </tr>
-                                                        </tbody>
                                             </Table>
-                                           
+
+                                            <ContentTranscript/>
+                                            <ContentTranscript/>
+                                            <ContentTranscript/>
+                                            <ContentTranscript/>
+                                            <ContentTranscript/>
+                                            <ContentTranscript/>
+                                            <ContentTranscript/>
+                                            <ContentTranscript/>
+                                            <ContentTranscript/>
+                                            <ContentTranscript/>
+
                                         </CardBody>
                                     </Card>
                                  </Col>
-            <div  className="avg">
-                <tr>
-                    <td colSpan={10}  > Điểm trung bình học kỳ:  8.0    </td>
-                </tr>
-            </div>
         </div>
     )
 }
