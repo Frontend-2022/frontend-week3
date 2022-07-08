@@ -11,6 +11,16 @@
 .navigation__name {
   width: 60px;
   height: 40px;
+<<<<<<< HEAD
   margin: 0 50px;
   font-size: 1.5rem;
 }
+=======
+  margin: 0 10px;
+}
+
+.navCSS {
+  width: 80%;
+  margin: 0 auto;
+}
+>>>>>>> bb5a371b8bbdb132e8d441acc3d69d6606d86321
