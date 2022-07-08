@@ -41,7 +41,7 @@ class TuitionFee extends React.Component{
                 </Modal>
                 </NavItem>
                 <FormGroup>
-                    <Label for="exampleSelect" style={{fontWeight:'normal'}}>Học kỳ</Label>
+                    <Label for="exampleSelect">Học kỳ</Label>
                         <Input type="select" name="select" id="exampleSelect" >
                             <option >Tất cả</option>
                             <option >Học kỳ</option>
@@ -50,7 +50,7 @@ class TuitionFee extends React.Component{
                             <option >Học kỳ</option>
                         </Input>
                     </FormGroup>
-                <NavItem><h4>BẢNG KÊ CHI TIẾT HỌC PHÍ</h4></NavItem>
+                <NavItem><h4 style={{color:'#000000'}}>BẢNG KÊ CHI TIẾT HỌC PHÍ</h4></NavItem>
                 <Card className="main-card mb-4" >
                                         <CardBody>
                                         <Table hover className="mb-0">
@@ -191,8 +191,8 @@ class TuitionFee extends React.Component{
           </tr>
           <tr>
             <td colSpan={6} ></td >
-            <th>Học phí nợ</th>
-            <th>100</th>
+            <th style={{color:'rgb(169, 0, 1)'}}>Học phí nợ</th>
+            <th style={{color:'rgb(169, 0, 1)'}}>100</th>
             <th></th>
           </tr>
         </tbody>

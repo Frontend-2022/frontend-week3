@@ -7,13 +7,13 @@ function Navigation() {
     return(
         <div class="navigation"> 
             <div className="grid">
-                <Link to="/">
+                <Link to="/" style={{textDecoration:"none", color:"#FFFF"}}>
                     <span className="navigation__name">TKB</span>
                 </Link>
-                <Link to="/transcript">
+                <Link to="/transcript" style={{textDecoration:"none", color:"#FFFF"}}>
                     <span className="navigation__name">Bảng điểm</span>
                 </Link>
-                <Link to="/tuitionFee">
+                <Link to="/tuitionFee" style={{textDecoration:"none", color:"#FFFF"}}>
                     <span className="navigation__name">Học phí</span>
                 </Link>
             </div>   
