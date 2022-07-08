@@ -10,7 +10,7 @@ import {
 import TableBordered from "./table-schedule/table-border";
 
 function Schedule() {
-    return(
+    return (
         <div className="scheduleCSS">
             <div className="schedule__header">
                 <div className="schedule__header-button">
@@ -18,7 +18,7 @@ function Schedule() {
                 </div>
                 <input placeholder="tuần from...to...."></input>
                 <div className="schedule__header-button">
-                    <BiCaretRight/>
+                    <BiCaretRight />
                 </div>
             </div>
 
@@ -28,13 +28,12 @@ function Schedule() {
 
             <div className="schedule__contents">
                 <div className="schedule__contents-name">
-                    <span>THỜI KHÓA BIỂU THEO TUẦN HỌC KỲ HÈ, 2021 - 2022 <br/>TUẦN 3 ( 04/07/2022 - 10/07/2022 )</span>
+                    <span>THỜI KHÓA BIỂU THEO TUẦN HỌC KỲ HÈ, 2021 - 2022 <br />TUẦN 3 ( 04/07/2022 - 10/07/2022 )</span>
                 </div>
                 <div className="schedule__contents-table">
-                    <Card className="main-card">
+                    <Card className="main-card mb-0">
                         <CardBody>
-                            <CardTitle>Table bordered</CardTitle>
-                            <TableBordered/>
+                            <TableBordered />
                         </CardBody>
                     </Card>
                 </div>
