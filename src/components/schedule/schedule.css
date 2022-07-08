@@ -2,7 +2,8 @@
     width: 80%;
     margin: 0 auto;
     /* height: 500px; */
-    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 0px 5px 0px;
 }
 
 .schedule__header {
@@ -17,15 +18,42 @@
 }
 
 .schedule__student {
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid red;
     margin: 0 24px;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+
 }
 
 .schedule__contents {
-    margin: 0 24px;
+    margin: 0 8px;
     
 }
 
 .schedule__contents-name {
+    margin: 10px 0;
     text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+}
+
+.schedule__contents-table {
+
+}
+
+.schedule__note {
+    padding: 20px 24px;
+}
+
+.schedule__note-title {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.schedule__note-contents {
+    color: black;
+    font-size: 16px;
 }
