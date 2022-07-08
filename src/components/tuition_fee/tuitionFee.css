@@ -15,6 +15,7 @@
     width: 100%;
     list-style: none;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .nav-item .nav-link {
@@ -133,7 +134,7 @@
   
   .modal-title {
     margin-bottom: 0;
-    margin-left: 160px;
+    margin-left: 110px;
     line-height: 1.5;
   }
   
@@ -357,16 +358,22 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  h51,.h51,h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-weight: 400;
     line-height: 1.2;
   }
   h5, .h5 {
-    color: rgb(154, 31, 68) !important;
-    text-align: center;
+    color: rgb(31, 37, 154) !important;
+    text-align: left;
     font-size: 1.1rem;
+  }
+  h51, .h51 {
+    color:  rgb(154, 31, 68) !important;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: bold;
   }
   h4, .h4 {
     text-align: center;
@@ -581,6 +588,16 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     --bs-table-accent-bg: var(--bs-table-hover-bg);
     color: var(--bs-table-hover-color);
   }
+  .table thead th,
+.table td {
+  vertical-align: middle;
+}
+
+.table th .filter {
+  margin-top: 0.375rem;
+  height: auto;
+  padding: 0.3rem 0.5rem;
+}
   @font-face {
     font-family: "Pe-icon-7-stroke";
     src: url("../fonts/Pe-icon-7-stroke.eot?d7yf1v");
@@ -600,7 +617,14 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
   }
   .pe-7s-print:before {
     content: "\e61f";
   }
+  *, *::before, *::after {
+    box-sizing: border-box;
+}
+.pe-7s-print{
+    font-size:20px;
+}

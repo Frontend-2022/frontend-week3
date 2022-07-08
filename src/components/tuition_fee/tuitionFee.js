@@ -23,7 +23,7 @@ class TuitionFee extends React.Component{
                 <NavItem>
                     <NavLink onClick={this.toggle} >Thông tin sinh viên</NavLink>
                     <Modal  isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} >
-                    <ModalHeader toggle={this.toggle}><h5>Hệ Đào Tạo: Cao Đẳng Chính Quy</h5></ModalHeader>
+                    <ModalHeader toggle={this.toggle}><h51>Hệ Đào Tạo: Cao Đẳng Chính Quy</h51></ModalHeader>
                     <ModalBody>
                         <Row>
                             <Col>
@@ -41,7 +41,7 @@ class TuitionFee extends React.Component{
                 </Modal>
                 </NavItem>
                 <FormGroup>
-                    <Label for="exampleSelect">Học kỳ</Label>
+                    <Label for="exampleSelect" style={{fontWeight:'normal'}}>Học kỳ</Label>
                         <Input type="select" name="select" id="exampleSelect" >
                             <option >Tất cả</option>
                             <option >Học kỳ</option>
@@ -77,7 +77,7 @@ class TuitionFee extends React.Component{
             <td>Otto</td>
             <td>@mdo</td>
             <td>Mark</td>
-            <td><a href="/"><i class="pe-7s-print"> </i></a></td>
+            <td><a href="/"><i class="pe-7s-print" > </i></a></td>
           </tr>
           <tr>
             <th scope="row">2</th>
@@ -101,7 +101,100 @@ class TuitionFee extends React.Component{
             <td>Mark</td>
             <td><a href="/"><i class="pe-7s-print"> </i></a></td>
           </tr>
-          
+          <tr>
+            <th scope="row">4</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td><a href="/"><i class="pe-7s-print"> </i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td><a href="/"><i class="pe-7s-print"> </i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td><a href="/"><i class="pe-7s-print"> </i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td><a href="/"><i class="pe-7s-print"> </i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td><a href="/"><i class="pe-7s-print"> </i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td><a href="/"><i class="pe-7s-print"> </i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td><a href="/"><i class="pe-7s-print"> </i></a></td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td><a href="/"><i class="pe-7s-print"> </i></a></td>
+          </tr>
+          <tr>
+            <td colSpan={6} ></td >
+            <th>Học phí nợ</th>
+            <th>100</th>
+            <th></th>
+          </tr>
         </tbody>
       </Table>
       

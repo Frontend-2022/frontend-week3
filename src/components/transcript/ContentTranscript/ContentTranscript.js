@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { TabContent, Table, Row, Col, Card, CardBody, CardTitle,Button, ButtonGroup } from "reactstrap";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import "/FEWEEK3/src/components/transcript/transcript.css";
+import "../transcript.css";
 
 function ContentTranscript (){
         return(
