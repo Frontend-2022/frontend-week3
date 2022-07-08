@@ -111,7 +111,7 @@ function Transcript() {
                                  <Col lg="6">
                                     <Card className="main-card mb-3">
                                         <CardBody>
-                                            <CardTitle style={{color:" rgb(5, 5, 10) !important"}}>Kết quả học tập</CardTitle>
+                                            <CardTitle className="h5a">Kết quả học tập</CardTitle>
                                             <Table hover className="mb-0">
                                                 <thead style={{backgroundColor: '#a8a3a3'}}>
                                                 <tr>

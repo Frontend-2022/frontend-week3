@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter,Table} from 'reactstrap';
-
+import '../transcript.css'
 class ModalTranscript extends React.Component {
     constructor(props) {
         super(props);
@@ -21,8 +21,8 @@ class ModalTranscript extends React.Component {
         return (
             <span className="d-inline-block mb-2 me-2">
                 <button  className="BtnDetail" color="primary" onClick={this.toggle}><i class="pe-7s-plus"  style={{fontSize:"24px"}}> </i></button>
-                <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                    <ModalHeader toggle={this.toggle}  >Nguyên lý thị giác</ModalHeader>
+                <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} style={{maxWidth:"667px"}} >
+                    <ModalHeader toggle={this.toggle}><h5a> Nguyên lý thị giác</h5a></ModalHeader>
                     <ModalBody>
                     <Table className="mb-0">
                         <thead colSpan="6">

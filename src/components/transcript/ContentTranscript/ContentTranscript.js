@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { TabContent, Table, Row, Col, Card, CardBody, CardTitle,Button, ButtonGroup } from "reactstrap";
+import { TabContent, Table, Row, Col, Card, CardBody, CardTitle,Button, ButtonGroup ,Modal} from "reactstrap";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import "../transcript.css";
 import img from '../Dau.png'
