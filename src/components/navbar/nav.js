@@ -6,7 +6,7 @@ import "../basic/grid.css";
 function Navigation() {
     return(
         <div class="navigation"> 
-            <div className="grid">
+            <div className="grid nav__style">
                 <Link to="/" style={{textDecoration:"none", color:"#FFFF"}}>
                     <span className="navigation__name">TKB</span>
                 </Link>
