@@ -4,6 +4,9 @@ import { TabContent, Table, Row, Col, Card, CardBody, CardTitle,Button, ButtonGr
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import ContentTranscript from './ContentTranscript/ContentTranscript'
 import "./transcript.css";
+import img from '../transcript/Dau.png'
+import img2 from '../transcript/Rot.png'
+
 
 function Transcript() {
     return(
@@ -82,7 +85,8 @@ function Transcript() {
                         <option value={"4"}>4</option>
                     </select>
                 </div>
-                <Button outline className="mb-2 me-2 btn-transition btn-primary" color="primary">Xem bản in</Button>
+                <Button outline className="mb-2 me-2 btn-transition btn-primary " color="primary" style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"110px"}}>
+                <i class="pe-7s-print" style={{fontSize:"15px"}}> </i> <p>Xem bản in</p></Button>
             </div>
             <hr style={{border:0,borderTop:"1px solid #eee",width:"90%"}}></hr>
             <div className="warn">
@@ -90,12 +94,13 @@ function Transcript() {
                     <u>Chú ý:</u>
                 </strong>
                     <div style={{width:'130px' , display:'flex', marginLeft:"20px",marginTop:"5px"}}>
-                    <img src="https://student.ueh.edu.vn/Content/images/Dau.png" alt="" style={{width:'15',border:0,marginRight:"15px"}}>
+                    <img src={img} alt="" style={{width:'15',border:0,marginRight:"15px"}}>
+
                     </img>
                       <p> Học phần đậu</p>
                     </div>
                     <div style={{width:'130px' , display:'flex', marginLeft:"20px",marginTop:"5px"}}>
-                    <img src="https://student.ueh.edu.vn/Content/images/Rot.png" alt="" style={{width:'15',border:0,marginRight:"22px"}}>
+                    <img src={img2} alt="" style={{width:'15',border:0,marginRight:"22px"}}>
                     </img>
                       <p >  Học phần rớt</p>
                     </div>
@@ -106,7 +111,7 @@ function Transcript() {
                                  <Col lg="6">
                                     <Card className="main-card mb-3">
                                         <CardBody>
-                                            <CardTitle>Kết quả học tập</CardTitle>
+                                            <CardTitle style={{color:" rgb(5, 5, 10) !important"}}>Kết quả học tập</CardTitle>
                                             <Table hover className="mb-0">
                                                 <thead style={{backgroundColor: '#a8a3a3'}}>
                                                 <tr>

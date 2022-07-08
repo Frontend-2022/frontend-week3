@@ -318,12 +318,12 @@ th {
     color:red;
     font-weight:bold;
     border-bottom: 1px solid #e9ecef;
-    width: 98.5%;
+    width: 98,5%;
     height: 40px;
     align-items: flex-start;
     display: flex;
     margin: 0 auto;
-    /* padding-left: 15px; */
+    padding-left: 15px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -352,4 +352,20 @@ th {
   }
   .pe-7s-print:before {
     content: "\e61f";
+  }
+  .pe-7s-plus:before {
+    content: "\e623";
+  }
+  .BtnDetail{
+    border: none;
+    background-color:transparent;
+    border-radius: 50%;
+  }
+  .BtnDetail:hover{
+    color: #0c1272;
+  }
+  h5, .h5a{
+    color: rgb(5, 5, 10) !important;
+    text-align: left;
+    font-size: 1.1rem;
   }
