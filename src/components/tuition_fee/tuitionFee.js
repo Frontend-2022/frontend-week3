@@ -51,7 +51,7 @@ class TuitionFee extends React.Component{
                         </Input>
                     </FormGroup>
                 <NavItem><h4>BẢNG KÊ CHI TIẾT HỌC PHÍ</h4></NavItem>
-                <Card className="main-card mb-4">
+                <Card className="main-card mb-4" >
                                         <CardBody>
                                         <Table hover className="mb-0">
         <thead style={{backgroundColor: '#a8a3a3'}}>
@@ -77,7 +77,7 @@ class TuitionFee extends React.Component{
             <td>Otto</td>
             <td>@mdo</td>
             <td>Mark</td>
-            <td><a href="/"><i class="pe-7s-print" > </i></a></td>
+            <td><a href="/" ><i class="pe-7s-print " > </i></a></td>
           </tr>
           <tr>
             <th scope="row">2</th>
