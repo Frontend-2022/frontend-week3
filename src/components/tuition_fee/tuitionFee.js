@@ -19,7 +19,7 @@ class TuitionFee extends React.Component{
     
     render() {
         return(
-            <div className="tuitionFeeCSS">
+            <div className="tuitionFeeCSS" style={{borderRadius:"5px",boxShadow:"0px 0px 5px 0px rgb(0 0 0 / 25%)",}}>
                 <NavItem>
                     <NavLink onClick={this.toggle} >Thông tin sinh viên</NavLink>
                     <Modal  isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} >
