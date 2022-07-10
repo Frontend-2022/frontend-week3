@@ -3,7 +3,8 @@
     height: auto;
     background-color: #ffff;
     margin: 0 auto;
-    border: 1px solid ;
+    border:  0.2px solid white ;
+    z-index: 1;
 }
 
   @media (prefers-reduced-motion: reduce) {
@@ -467,7 +468,7 @@ body {
     width: 100%;
   }
     p, .p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 0;
 }
 .form-label {

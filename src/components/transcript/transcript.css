@@ -318,12 +318,12 @@ th {
     color:red;
     font-weight:bold;
     border-bottom: 1px solid #e9ecef;
-    width: 98,5%;
+    width: 98.5%;
     height: 40px;
     align-items: flex-start;
     display: flex;
     margin: 0 auto;
-    padding-left: 15px;
+    /* padding-left: 15px; */
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -353,6 +353,7 @@ th {
   .pe-7s-print:before {
     content: "\e61f";
   }
+<<<<<<< HEAD
   .pe-7s-plus:before {
     content: "\e623";
   }
@@ -670,3 +671,5 @@ th {
       /* align-items: center; */
       background-color: rgba(0, 0, 0, 0.05);
     }
+=======
+>>>>>>> e98ebe01a035ea483e59a06171a64fb91b6f37cb
