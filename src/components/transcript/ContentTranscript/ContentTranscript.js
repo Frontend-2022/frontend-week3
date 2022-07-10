@@ -103,7 +103,7 @@ function ContentTranscript (){
 
                         <div  className="avg">
                             <tr>
-                                <td colSpan={10}  > Điểm trung bình học kỳ:  8.0    </td>
+                                <td colSpan={10} style={{paddingLeft:"20px"}} > Điểm trung bình học kỳ:  8.0    </td>
                             </tr>
                         </div>
             </div>
