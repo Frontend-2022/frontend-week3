@@ -14,7 +14,7 @@ function Transcript() {
         <>
         <div className="contentMiddle" style={{borderRadius:"5px",boxShadow:"0px 0px 5px 0px rgb(0 0 0 / 25%)",}}>
             <div className="bgTittle">
-                <span style={{color:"#A90001",font:"0.8em  Tahoma, Arial, Sans-Serif",fontSize:"15px",fontWeight:"bold",textTransform:"uppercase"}} >Thông tin sinh viên</span>
+                <span style={{color:"#A90001",font:"0.8em  Tahoma, Arial, Sans-Serif",fontSize:"15px",fontWeight:"bold",textTransform:"uppercase",paddingLeft:"40px"}} >Thông tin sinh viên</span>
             </div>
 
 

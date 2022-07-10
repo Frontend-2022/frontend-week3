@@ -10,7 +10,7 @@ function FooterTranscript()
     return(
 
     <div className="abc">
-        <div style={{paddingTop:"30px",paddingLeft:"20px",width:"80%",color:"red",fontWeight:"bold",fontSize:"18px"}}>Ghi chú</div>
+        <div style={{paddingTop:"30px",paddingLeft:"20px",width:"80%",color:"red",fontWeight:"bold",fontSize:"18px",textDecorationLine:"underline"}}>Ghi chú:</div>
         <div> - Điểm trung bình tích lũy = Tổng điểm các môn
         <b>TRONG CTDT ĐÃ HỌC & ĐẠT</b>/ Tổng số tín chỉ <b>TRONG CTDT ĐÃ HỌC & ĐẠT</b>
        <br></br> - Điểm trung bình tổng kết = Tổng điểm các môn <b>ĐÃ HỌC & ĐẠT</b>/ Tổng số tín chỉ <b>ĐÃ HỌC & ĐẠT</b>
