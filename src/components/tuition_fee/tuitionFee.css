@@ -355,7 +355,7 @@ body {
     font-size: 0.88rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    color: black;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -443,10 +443,9 @@ body {
   }
   .card-header,
 .card-title {
-  text-transform: uppercase;
-  color: #000;
+  color: red;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 1rem;
 }
 .card-header {
     display: flex;
@@ -470,6 +469,7 @@ body {
     p, .p{
     font-size: 1rem;
     margin: 0;
+    color: black;
 }
 .form-label {
     margin-top: 5px;
@@ -567,7 +567,7 @@ body {
     --bs-table-hover-bg: #e0f3ff;
     width: 100%;
     margin-bottom: 1rem;
-    color: #495057;
+    color: black;
     vertical-align: top;
     border-color: #e9ecef;
   }

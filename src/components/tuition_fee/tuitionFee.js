@@ -202,7 +202,7 @@ class TuitionFee extends React.Component{
                                             </Card>
                 <Card className="main-card mb-3">
                     <CardBody>
-                        <CardTitle>Lưu Ý</CardTitle>
+                        <CardTitle style={{textTransform:'none'}}>Ghi chú:</CardTitle>
                             <p> - Phần mềm tính học phí và hiển thị học phí của sinh viên (SV) đang trong thời gian chạy thử nghiệm. Phòng Đào tạo mong Quý Phụ huynh và SV thông cảm về những sai sót có thể phát sinh trong giai đoạn này.</p>
                             <p> - SV đóng thừa học phí sẽ được cấn trừ vào học kỳ tiếp theo. Nếu vẫn còn thừa, sẽ được nhận lại sau khi nhận bằng tốt nghiệp khóa học.</p>
                             <p> - SV có trách nhiệm tự kiểm tra học phí, khi có thắc mắc liên hệ số ĐT: 0353 4138 06 hoặc email: trangnguyen@vido.edu.vn</p>
