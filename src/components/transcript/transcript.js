@@ -2,14 +2,16 @@ import React, {Component, Fragment} from "react";
 import { Link } from "react-router-dom";
 import { TabContent, Table, Row, Col, Card, CardBody, CardTitle,Button, ButtonGroup } from "reactstrap";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import ContentTranscript from './ContentTranscript/ContentTranscript'
+import ContentTranscript from './ContentTranscript/ContentTranscript';
 import "./transcript.css";
+import FooterTranscript from "./footerTrans";
 import img from '../transcript/Dau.png'
 import img2 from '../transcript/Rot.png'
 
 
 function Transcript() {
     return(
+        <>
         <div className="contentMiddle" style={{borderRadius:"5px",boxShadow:"0px 0px 5px 0px rgb(0 0 0 / 25%)",}}>
             <div className="bgTittle">
                 <span style={{color:"#A90001",font:"0.8em  Tahoma, Arial, Sans-Serif",fontSize:"15px",fontWeight:"bold",textTransform:"uppercase"}} >Thông tin sinh viên</span>
@@ -143,7 +145,9 @@ function Transcript() {
                                         </CardBody>
                                     </Card>
                                  </Col>
+                                 <FooterTranscript/>
         </div>
+        </>
     )
 }
 
