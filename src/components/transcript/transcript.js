@@ -87,22 +87,22 @@ function Transcript() {
                         <option value={"4"}>4</option>
                     </select>
                 </div>
-                <Button outline className="mb-2 me-2 btn-transition btn-primary " color="primary" style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"110px"}}>
-                <i class="pe-7s-print" style={{fontSize:"15px"}}> </i> <p>Xem bản in</p></Button>
+                <Button outline className="mb-2 me-2 btn-transition btn-primary " color="primary" style={{display:"flex",alignItems:"center",width:"13%"}}>
+                <i class="pe-7s-print" style={{fontSize:"17px",marginRight:"8px"}}> </i> <p>Xem bản in</p></Button>
             </div>
             <hr style={{border:0,borderTop:"1px solid #eee",width:"90%"}}></hr>
             <div className="warn">
                 <strong style={{width:'130px' , display:'flex',justifyContent:"space-between", marginLeft:"20px",marginTop:"5px"}}>
                     <u>Chú ý:</u>
                 </strong>
-                    <div style={{width:'130px' , display:'flex', marginLeft:"20px",marginTop:"5px"}}>
-                    <img src={img} alt="" style={{width:'15',border:0,marginRight:"15px"}}>
+                    <div style={{width:'148px' , display:'flex', marginLeft:"20px",marginTop:"5px"}}>
+                    <img src={img} alt="" style={{width:'17px',border:0,marginRight:"15px"}}>
 
                     </img>
                       <p> Học phần đậu</p>
                     </div>
-                    <div style={{width:'130px' , display:'flex', marginLeft:"20px",marginTop:"5px"}}>
-                    <img src={img2} alt="" style={{width:'15',border:0,marginRight:"22px"}}>
+                    <div style={{width:'148px' , display:'flex', marginLeft:"20px",marginTop:"5px"}}>
+                    <img src={img2} alt="" style={{width:'17px',height:"15px",border:0,marginRight:"15px"}}>
                     </img>
                       <p >  Học phần rớt</p>
                     </div>

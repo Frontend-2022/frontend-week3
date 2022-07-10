@@ -26,7 +26,7 @@ function ContentTranscript (){
                                                                         <td style={{textAlign:'center',width:"53px",paddingLeft:"27px"}}>10</td>
                                                                         <td style={{textAlign:'center',width:"88px",paddingLeft:"27px"}}> A+</td>
                                                                         <td style={{textAlign:'center',width:"53px",paddingLeft:"27px"}}>
-                                                                        <img src={img} alt="" style={{width:'12',border:0}}></img>
+                                                                        <img src={img} alt="" style={{width:'20px',border:0}}></img>
                                                                         </td>
                                                                         <td style={{textAlign:'right',width:"123px",paddingLeft:"27px"}}></td>
                                                                         <td style={{width:"49px"}}>
@@ -43,7 +43,7 @@ function ContentTranscript (){
                                                                         <td style={{textAlign:'center',width:"53px",paddingLeft:"27px"}}>10</td>
                                                                         <td style={{textAlign:'center',width:"88px",paddingLeft:"27px"}}> A+</td>
                                                                         <td style={{textAlign:'center',width:"53px",paddingLeft:"27px"}}>
-                                                                        <img src={img} alt="" style={{width:'12',border:0}}></img>
+                                                                        <img src={img} alt="" style={{width:'20px',border:0}}></img>
                                                                         </td>
                                                                         <td style={{textAlign:'right',width:"123px",paddingLeft:"27px"}}></td>
                                                                         <td style={{width:"49px"}}>
@@ -59,7 +59,7 @@ function ContentTranscript (){
                                                                         <td style={{textAlign:'center',width:"53px",paddingLeft:"27px"}}>10</td>
                                                                         <td style={{textAlign:'center',width:"88px",paddingLeft:"27px"}}> A+</td>
                                                                         <td style={{textAlign:'center',width:"53px",paddingLeft:"27px"}}>
-                                                                        <img src={img} alt="" style={{width:'12',border:0}}></img>
+                                                                        <img src={img} alt="" style={{width:'20px',border:0}}></img>
                                                                         </td>
                                                                         <td style={{textAlign:'right',width:"123px",paddingLeft:"27px"}}></td>
                                                                         <td style={{width:"49px"}}><ModalTranscript/>       </td>
@@ -75,7 +75,7 @@ function ContentTranscript (){
                                                                         <td style={{textAlign:'center',width:"53px",paddingLeft:"27px"}}>10</td>
                                                                         <td style={{textAlign:'center',width:"88px",paddingLeft:"27px"}}> A+</td>
                                                                         <td style={{textAlign:'center',width:"53px",paddingLeft:"27px"}}>
-                                                                        <img src={img} alt="" style={{width:'12',border:0}}></img>
+                                                                        <img src={img} alt="" style={{width:'20px',border:0}}></img>
                                                                         </td>
                                                                         <td style={{textAlign:'right',width:"123px",paddingLeft:"27px"}}></td>
                                                                         <td style={{width:"49px"}}> <ModalTranscript/>
@@ -90,7 +90,7 @@ function ContentTranscript (){
                                                                         <td style={{textAlign:'center',width:"53px",paddingLeft:"27px"}}>10</td>
                                                                         <td style={{textAlign:'center',width:"88px",paddingLeft:"27px"}}> A+</td>
                                                                         <td style={{textAlign:'center',width:"53px",paddingLeft:"27px"}}>
-                                                                        <img src={img} alt="" style={{width:'12',border:0}}></img>
+                                                                        <img src={img} alt="" style={{width:'20px',border:0}}></img>
                                                                         </td>
                                                                         <td style={{textAlign:'right',width:"123px",paddingLeft:"27px"}}></td>
                                                                         <td style={{width:"49px"}}> <ModalTranscript/>
