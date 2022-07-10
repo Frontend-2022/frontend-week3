@@ -20,7 +20,7 @@ class TuitionFee extends React.Component{
     render() {
         return(
             <div className="tuitionFeeCSS" style={{borderRadius:"5px",boxShadow:"0px 0px 5px 0px rgb(0 0 0 / 25%)",}}>
-                <NavItem>
+                <div className="header">
                     <NavLink onClick={this.toggle} >Thông tin sinh viên</NavLink>
                     <Modal  isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} >
                     <ModalHeader toggle={this.toggle}><h51>Hệ Đào Tạo: Cao Đẳng Chính Quy</h51></ModalHeader>
@@ -39,7 +39,7 @@ class TuitionFee extends React.Component{
                         </Row>
                     </ModalBody>
                 </Modal>
-                </NavItem>
+                </div>
                 <FormGroup>
                     <Label for="exampleSelect">Học kỳ</Label>
                         <Input type="select" name="select" id="exampleSelect" >

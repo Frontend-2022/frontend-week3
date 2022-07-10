@@ -633,3 +633,23 @@ body {
   a:active{
     color: #000;
   }
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 51px;
+    left: 886px;
+    border-width: 40px 60px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.header{
+  width: 100%;
+  list-style: none;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.header .nav-link {
+  font-weight: bold;
+}
