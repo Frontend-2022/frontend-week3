@@ -637,7 +637,7 @@ body {
 .header::before {
     content: "";
     position: absolute;
-    top: -81px;
+    top: -76px;
     left: 673px;
     border-width: 40px 60px;
     border-style: solid;
